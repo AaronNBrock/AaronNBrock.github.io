@@ -293,20 +293,29 @@ jQuery(function ($) {
     // -------------------------------------------------------------
     // Contact Form
     // -------------------------------------------------------------
+    var messageReplacement = {
+        "_replyto or email field has not been sent correctly":"Invalid email. :(",
+        "email sent":"Email sent. :)"
+    };
 
     function formatMessage(message) {
-        // Remove non alphanumeric chars
-        message = message.replace(/[^0-9a-z ]/gi, '');
-        //Change first letter to uppercase
-        message = message.charAt(0).toUpperCase() + message.slice(1);
-        //Add period at the end of each line
-        var re = /[^.,!?]$/gm,
-            match,
-            index;
-        while ((match = re.exec(message)) !== null) {
-            index = match.index + 1;
-            message = message.slice(0, index) + '.' + message.slice(index)
+        if (message in messageReplacement) {
+            message = messageReplacement[message];
+        } else {
+            // Remove non alphanumeric chars
+            message = message.replace(/[^0-9a-z ()]/gi, '');
+            //Change first letter to uppercase
+            message = message.charAt(0).toUpperCase() + message.slice(1);
+            //Add period at the end of each line
+            var re = /[^.,!?()]$/gm,
+                match,
+                index;
+            while ((match = re.exec(message)) !== null) {
+                index = match.index + 1;
+                message = message.slice(0, index) + '.' + message.slice(index)
+            }
         }
+
         return message
     }
 
@@ -322,15 +331,15 @@ jQuery(function ($) {
 
         var jqxhr = $.post( $action, $data, null, "json")
             .done(function(data) {
-                console.log("success");
                 var message = data.success;
+                console.log('Success: ' + message);
                 message = formatMessage(message);
                 $this.before( '<div class="alert alert-success">'+message+'</div>' );
                 $this.find('input, textarea').val('');
             })
             .fail(function(data) {
-                console.log('error');
                 var message = JSON.parse(data.responseText).error;
+                console.log('Error: ' + message);
                 message = formatMessage(message);
                 $this.before( '<div class="alert alert-danger">'+message+'</div>' );
             });
