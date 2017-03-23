@@ -333,7 +333,7 @@ ul.list-check li::before {
 	padding: 0;
 	position: relative;
 }
-*/
+
 #home:before {
 	content: "";
 	background-color: rgba(26, 30, 35, 0.5);
@@ -342,6 +342,11 @@ ul.list-check li::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+*/
+
+#home{
+    background-color: rgba(26, 30, 35, 0.5);
 }
 
 .intro {
