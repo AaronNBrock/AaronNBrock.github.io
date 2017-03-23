@@ -161,6 +161,7 @@ jQuery(function ($) {
     // Shuffle
     // -------------------------------------------------------------
 
+    /*
     (function () {
 
         var $grid = $('#grid');
@@ -169,7 +170,7 @@ jQuery(function ($) {
             itemSelector: '.portfolio-item'
         });
 
-        /* reshuffle when user clicks a filter item */
+        /* reshuffle when user clicks a filter item * /
         $('#filter a').click(function (e) {
             e.preventDefault();
 
@@ -186,7 +187,7 @@ jQuery(function ($) {
 
 
     }());
-
+    */
 
     // -------------------------------------------------------------
     // Magnific Popup
