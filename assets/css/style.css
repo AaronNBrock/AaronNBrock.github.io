@@ -1494,7 +1494,7 @@ Icon for all respective meta
     left: 0;
 }
 
-/* === Hire Section === */
+/* === Hire Section === * /
 .hire-section {
     background: url(../../assets/images/hire-bg.jpg) no-repeat top center #4D0082;
     background-attachment: fixed;
@@ -1503,10 +1503,10 @@ Icon for all respective meta
 }
 .hire-section-bg {
     padding: 110px 0;
-    background: -webkit-linear-gradient(bottom, #4D0082, rgba(77, 0, 130, 0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(top, #4D0082, rgba(77, 0, 130, 0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(top, #4D0082, rgba(77, 0, 130, 0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to top, #4D0082, rgba(77, 0, 130, 0.7)); /*Standard*/
+    background: -webkit-linear-gradient(bottom, #4D0082, rgba(77, 0, 130, 0.7)); /*Safari 5.1-6* /
+    background: -o-linear-gradient(top, #4D0082, rgba(77, 0, 130, 0.7)); /*Opera 11.1-12* /
+    background: -moz-linear-gradient(top, #4D0082, rgba(77, 0, 130, 0.7)); /*Fx 3.6-15* /
+    background: linear-gradient(to top, #4D0082, rgba(77, 0, 130, 0.7)); /*Standard* /
 }
 
 .hire-section h2 {
