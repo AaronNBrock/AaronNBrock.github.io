@@ -323,9 +323,9 @@ ul.list-check li::before {
     }
 }
 
-
+/*
 #home {
-	background: url(../images/nebula-home.jpg) no-repeat center center;
+	//background: url(../images/nebula-home.jpg) no-repeat center center;
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
@@ -333,6 +333,7 @@ ul.list-check li::before {
 	padding: 0;
 	position: relative;
 }
+*/
 #home:before {
 	content: "";
 	background-color: rgba(26, 30, 35, 0.5);
@@ -624,7 +625,7 @@ SOCIAL ICON
 
 
 
-/* === Video Section === */
+/* === Video Section === * /
 
 .video-section {
     background: url(../images/video-bg.jpg) no-repeat center center;
@@ -669,15 +670,15 @@ SOCIAL ICON
 /* === Quote === */
 
 #quote {
-    background: url(../../assets/images/nebula-1.jpg) no-repeat center center;
+    //background: url(../../assets/images/nebula-1.jpg) no-repeat center center;
 }
 
 #quote2 {
-    background: url(../../assets/images/nebula-2.jpg) no-repeat center center;
+    //background: url(../../assets/images/nebula-2.jpg) no-repeat center center;
 }
 
 #quote3 {
-    background: url(../../assets/images/nebula-3.jpg) no-repeat center center;
+    //background: url(../../assets/images/nebula-3.jpg) no-repeat center center;
 }
 
 .quote-section {
@@ -1738,7 +1739,7 @@ Icon for all respective meta
 
 
 
-/*SERVICE SECTION*/
+/*SERVICE SECTION* /
 .service-section {
     background: url(../../assets/images/service-bg.jpg) no-repeat center center;
     background-size: cover;
@@ -1804,7 +1805,7 @@ Icon for all respective meta
     transition: all 300ms;
 }
 
-/*HOMEPAGE TWO*/
+/*HOMEPAGE TWO* /
 #homeTwo{
     position: relative;
 }
@@ -1861,3 +1862,4 @@ Icon for all respective meta
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
 }
+/* */
