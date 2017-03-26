@@ -1,0 +1,19 @@
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+    vertical-align: text-top;
+
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+
+    vertical-align: text-top;
+}
+
+.no-break {
+    white-space: nowrap;
+}

@@ -674,22 +674,10 @@ SOCIAL ICON
 
 /* === Quote === */
 
-#quote {
-    //background: url(../../assets/images/nebula-1.jpg) no-repeat center center;
-}
-
-#quote2 {
-    //background: url(../../assets/images/nebula-2.jpg) no-repeat center center;
-}
-
-#quote3 {
-    //background: url(../../assets/images/nebula-3.jpg) no-repeat center center;
-}
-
 .quote-section {
     background-size: cover;
     position: relative;
-    min-height: 300px;
+    min-height: 320px;
 }
 
 .quote-section:before {
@@ -1154,24 +1142,28 @@ Resume Timeline
 .works-section {
     background-color: #f7f7f7;
 }
-.portfolio-item {
-    padding-right: 5px;
-    padding-left: 5px;
-    min-height: 235px;
+
+/* change things */
+#so-card-widget {
+
 }
-.portfolio-bg{
-   background: #fff;
-   padding: 5px;
-   margin-bottom: 20px;
-   border: 1px solid #eee;
-   border-bottom: 3px double #eee;
+#so-card-widget > div > div.so-header > h4 {
+    text-transform: none;
+}
+#so-card-widget > div > div > .so-display-name {
+    padding: 26px 0;
 }
 
-
-.portfolio {
-    position: relative;
-    overflow: hidden;
+/* add things*/
+.works-card {
+    height: 300px;
+    min-height: 317px;
 }
+.works-item {
+    height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* Shuffle Filter*/
